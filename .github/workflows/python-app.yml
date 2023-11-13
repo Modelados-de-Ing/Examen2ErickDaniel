@@ -37,6 +37,5 @@ jobs:
         fetch-depth: 0
     - name: Execute Test
       run: |
-        cd source
         python -m unittest -v Test_Examen2.py
         
