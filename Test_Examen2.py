@@ -32,7 +32,7 @@ class test(unittest.TestCase):
 
     def test_Encuentra(self):
         db = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
-        self.assertTrue(db.Encuentra(["texto", 123, 0.5, True], 0.5))
+        self.assertTrue(db.Encuentra(["texto", 123, 0.5, True], 1))
 
 if __name__ == "__main__":
     unittest.main()
