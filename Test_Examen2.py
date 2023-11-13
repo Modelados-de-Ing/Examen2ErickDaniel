@@ -14,19 +14,19 @@ class test(unittest.TestCase):
         db= MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
         self.assertTrue(db.VerificaListaCanciones(["Canción 1", "Canción 2", "Canción 3"]))
 
-    def test_ObtieneValencia (self):
+    def test_ObtieneValencia2 (self):
         db = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
         self.assertEqual(db.ObtieneValencia(5790238172),6)
 
-    def test_ObtieneMasBailable(self):
+    def test_ObtieneMasBailable2(self):
         db = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
         self.assertEqual(db.ObtieneMasBailable([25,245,18]),245)
 
-    def test_VerificaListaCanciones(self):
+    def test_VerificaListaCanciones2(self):
         db= MiClase(5, 120, 12, ["Canción 1", "Canción 5", "Canción 9"], [0.8, 0.9, 0.7])
         self.assertTrue(db.VerificaListaCanciones(["Canción 2", "Canción 5", "Canción 9"]))
 
-    def test_DivisibleTempo(self):
+    def test_DivisibleTempo2(self):
         db = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
         self.assertEqual(db.DivisibleTempo(5),[1,5])
 
