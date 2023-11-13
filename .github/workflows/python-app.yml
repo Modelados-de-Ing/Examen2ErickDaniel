@@ -38,5 +38,5 @@ jobs:
     - name: Execute Test
       run: |
         cd source
-        python -m unittest -v test_Examen2.py
+        python -m unittest -v Test_Examen2.py
         
