@@ -30,5 +30,9 @@ class test(unittest.TestCase):
         db = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
         self.assertEqual(db.DivisibleTempo(5),[1,5])
 
+    def test_Encuentra(self):
+        db = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
+        self.assertTrue(db.Encuentra(["texto", 123, 0.5, True], 0.5))
+
 if __name__ == "__main__":
     unittest.main()
